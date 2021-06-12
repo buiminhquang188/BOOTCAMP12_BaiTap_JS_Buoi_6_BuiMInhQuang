@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- BÀI 1  -->
+    <h1>Bài 1:</h1>
+    <h2>Sơ đồ 3 khối</h2>
+    <p>Bước 1: Input</p>
+    <ul>
+      <li>Không có</li>
+    </ul>
+    <p>Bước 2: Handle</p>
+    <ul>
+      <li>1 + 2 + 3 + ... n = (n*(n+1))/2</li>
+      <li>Tạo biến tổng số gán bằng 0.</li>
+      <li>Sau đó cho vòng for với i chạy từ 1 tới 10000</li>
+      <li>Trong vòng for thì tổng số = (i * (i + 1)) / 2</li>
+      <li>Nếu tổng số > 10000 thì break</li>
+    </ul>
+    <p>Bước 3: Output</p>
+    <ul>
+      <li>Xuất kết quả i</li>
+    </ul>
+    <form>
+      <input
+        name=""
+        id="btnBai1"
+        class="btn btn-primary"
+        type="button"
+        value="Tính"
+      />
+      <p id="ketQuaBai1" class="bg-dark"></p>
+    </form>
+    <!-- BÀI 2  -->
+    <h1>Bài 2</h1>
+    <h2>Sơ đồ 3 khối</h2>
+    <p>Bước 1: Input</p>
+    <ul>
+      <li>nhapSoX, nhapSoN</li>
+    </ul>
+    <p>Bước 2: Handle</p>
+    <ul>
+      <li>DOM tới lấy giá trị của nhapSoX và nhapSoN</li>
+      <li>
+        Kiểm tra nếu người dùng bỏ trống thì báo người dùng để nhập đủ 2 số
+      </li>
+      <li>
+        Tạo biến sumNumber để hứng giá trị trả về từ hàm tính tổng với hai tham
+        số truyền vào là nhapSoX và nhapSoN
+      </li>
+      <li>
+        Ở hàm tính tổng tạo biến sumNumber = 0, chạy vòng for từ i = 1 tới i bé
+        hơn hoặc bằng nhapSoN
+      </li>
+      <li>sumNumber = sumNumber + nhapSoX^i</li>
+    </ul>
+    <p>Bước 3: Output</p>
+    <ul>
+      <li>Xuất kết quả sumNumber ra</li>
+      <li>Thay đổi color chữ</li>
+    </ul>
+    <form>
+      <div class="form-group">
+        <label for="">Nhập x</label>
+        <input
+          class="form-control form-control-lg"
+          type="number"
+          placeholder="Nhập x"
+          id="nhapSoX"
+        />
+        <label for="">Nhập n</label>
+        <input
+          class="form-control form-control-lg"
+          type="number"
+          placeholder="Nhập n"
+          id="nhapSoN"
+        />
+      </div>
+      <input
+        name=""
+        id="btnBai2"
+        class="btn btn-primary"
+        type="button"
+        value="Tính"
+      />
+      <p id="ketQuaBai2" class="bg-dark"></p>
+    </form>
+    <!-- BÀI 3 -->
+    <h1>Bài 3</h1>
+    <h2>Sơ đồ 3 khối</h2>
+    <p>Bước 1: Input</p>
+    <ul>
+      <li>nhapGiaiThuaN</li>
+    </ul>
+    <p>Bước 2: Handle</p>
+    <ul>
+      <li>DOM tới input để lấy được giá trị của người dùng nhập vào</li>
+      <li>Nếu người dùng bỏ trống thì sẽ thông báo cho người dùng nhập vào</li>
+      <li>
+        Nếu người dùng nhập vào số âm thì báo cho người dùng không được nhập số
+        âm
+      </li>
+      <li>
+        Nếu người dùng nhập số thập phân thì sẽ thông báo cho người dùng là
+        không được nhập số thập phân
+      </li>
+      <li>
+        Tính giai thừa bằng cách tạo biến giaiThuaN để hứng giá trị trả về của
+        hàm tinhGiaiThua với tham số truyền vào là nhapGiaiThuaN
+      </li>
+      <li>
+        Trong hàm tinhGiaiThua ta sẽ cho chạy hàm for với i = 1; i bé hơn hoặc
+        bằng giá trị n mà người dùng nhập vào, i++
+      </li>
+      <li>
+        Gán giaiThuaN = giaiThuaN * i tức là mỗi lần i tăng lên 1 đơn vị sẽ nhân
+        với giá trị hiện tại của giaiThuaN, sau đó return lại giá trị giaiThuaN
+      </li>
+    </ul>
+    <p>Bước 3: Output</p>
+    <ul>
+      <li>Xuất kết quả giaiThuaN</li>
+      <li>Đổi màu của chữ</li>
+    </ul>
+    <form>
+      <div class="form-group">
+        <label for="">Nhập n</label>
+        <input
+          class="form-control form-control-lg"
+          type="number"
+          placeholder="Nhập n"
+          id="nhapGiaiThuaN"
+        />
+      </div>
+      <input
+        name=""
+        id="btnBai3"
+        class="btn btn-primary"
+        type="button"
+        value="Tính"
+      />
+      <p id="ketQuaBai3" class="bg-dark"></p>
+    </form>
+    <!-- BÀI 4 -->
+    <h1>Bài 1:</h1>
+    <h2>Sơ đồ 3 khối</h2>
+    <p>Bước 1: Input</p>
+    <ul>
+      <li>Không có</li>
+    </ul>
+    <p>Bước 2: Handle</p>
+    <ul>
+      <li>DOM tới item bằng querySelectorAll</li>
+      <li>DOM tới ketQuaBai4 và style display = 'none'</li>
+      <li>DOM tới button và addEventListener</li>
+      <li>Trong function thì đổi style thành block lại cho ketQuaBai4</li>
+      <li>
+        Cho chạy vòng for với i bắt đầu từ 0 và kết thúc tại độ dài của mảng
+      </li>
+      <li>
+        Đặt điều kiện if nếu i chia hết cho 2 thì đổi thuộc tính của listDiv[i]
+        thành màu đỏ, trường hợp còn lại thì màu xanh
+      </li>
+    </ul>
+    <p>Bước 3: Output</p>
+    <ul>
+      <li>Xuất màu của các div ra</li>
+    </ul>
+    <form>
+      <input
+        name=""
+        id="btnBai4"
+        class="btn btn-primary"
+        type="button"
+        value="Tạo Div"
+      />
+      <div id="ketQuaBai4">
+        <div class="item">Div 1</div>
+        <div class="item">Div 2</div>
+        <div class="item">Div 3</div>
+        <div class="item">Div 4</div>
+        <div class="item">Div 5</div>
+        <div class="item">Div 6</div>
+        <div class="item">Div 7</div>
+        <div class="item">Div 8</div>
+        <div class="item">Div 9</div>
+        <div class="item">Div 10</div>
+      </div>
+    </form>
+    <!-- MAIN JS  -->
+    <script src="index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
