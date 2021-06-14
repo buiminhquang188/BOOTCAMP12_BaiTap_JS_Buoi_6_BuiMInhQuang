@@ -35,10 +35,13 @@ var btnBai2 = function () {
     else if (nhapSoN < 0) {
         alert('Bạn không được nhập số âm ở n');
     }
-    else {
+    else if (parseInt(nhapSoN)) {
         var sumNumber = tinhTong(nhapSoX, nhapSoN);
         ketQuaBai2.innerHTML = sumNumber;
         ketQuaBai2.style.color = 'white';
+    }
+    else {
+        alert('Bạn không được nhập số thập phân');
     }
 
 }
